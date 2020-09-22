@@ -437,7 +437,7 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>#UFRGS:GeologicalSpatialRelationsOntology_behind</IRI>
-        <Literal xml:lang="en">A spatial relation between two Independent Continuants(BFO), x and y, in which y has a location that makes it near than x in the longitudinal axis corresponding to the same frame of reference. It is the inverse relation of In Front Of.</Literal>
+        <Literal xml:lang="en">A spatial relation between two Independent Continuants(BFO), x and y, in which y has a location that makes it nearer than x in the longitudinal axis corresponding to the same frame of reference. It is the inverse relation of In Front Of.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -497,7 +497,7 @@
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
         <IRI>#UFRGS:GeologicalSpatialRelationsOntology_in_front_of</IRI>
-        <Literal xml:lang="en">A spatial relation between two Independent Continuants (BFO), x and y, in which x has a location that makes it near than y in the longitudinal axis corresponding to the same frame of reference. It is the inverse relation of Behind.</Literal>
+        <Literal xml:lang="en">A spatial relation between two Independent Continuants (BFO), x and y, in which x has a location that makes it nearer than y in the longitudinal axis corresponding to the same frame of reference. It is the inverse relation of Behind.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
