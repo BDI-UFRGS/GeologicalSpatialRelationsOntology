@@ -93,6 +93,9 @@
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
     </Declaration>
     <Declaration>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+    </Declaration>
+    <Declaration>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
     </Declaration>
     <SubObjectPropertyOf>
@@ -345,19 +348,14 @@
         <Class IRI="http://purl.obolibrary.org/obo/BFO_0000004"/>
     </ObjectPropertyRange>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#UFRGS:GeologicalSpatialRelationsOntology_above</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A spatial relation between two Independent Continuants (BFO), x and y, in which x has a location greater than the location of y in the vertical axis corresponding to the same frame of reference. It is the inverse relation of Below.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#UFRGS:GeologicalSpatialRelationsOntology_above</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">above</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#UFRGS:GeologicalSpatialRelationsOntology_behind</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A spatial relation between two Independent Continuants(BFO), x and y, in which y has a location that makes it nearer than x in the longitudinal axis corresponding to the same frame of reference. It is the inverse relation of In Front Of.</Literal>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#UFRGS:GeologicalSpatialRelationsOntology_above</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A spatial relation between two Independent Continuants (BFO), x and y, in which x has a location greater than the location of y in the vertical axis corresponding to the same frame of reference. It is the inverse relation of Below.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -365,9 +363,9 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">behind</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#UFRGS:GeologicalSpatialRelationsOntology_below</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A spatial relation between two Independent Continuants (BFO), x and y, in which x has a location lower than the location of y in the vertical axis corresponding to the same frame of reference. It is the inverse relation of Above.</Literal>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#UFRGS:GeologicalSpatialRelationsOntology_behind</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A spatial relation between two Independent Continuants(BFO), x and y, in which y has a location that makes it nearer than x in the longitudinal axis corresponding to the same frame of reference. It is the inverse relation of In Front Of.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -375,9 +373,9 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">below</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#UFRGS:GeologicalSpatialRelationsOntology_externally_connected_with</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A symmetric subrelation of Spatially Discrete From between two Independent Continuants (BFO) whose external boundaries are adjacent.</Literal>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#UFRGS:GeologicalSpatialRelationsOntology_below</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A spatial relation between two Independent Continuants (BFO), x and y, in which x has a location lower than the location of y in the vertical axis corresponding to the same frame of reference. It is the inverse relation of Above.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -385,9 +383,9 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">externally connected with</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#UFRGS:GeologicalSpatialRelationsOntology_has_non_tangential_proper_spatial_part</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A subrelation of Has Proper Spatial Part between two Independent Continuants (BFO) whose external boundaries are not adjacent. It is the inverse relation of Non-tangential Proper Spatial Part Of.</Literal>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#UFRGS:GeologicalSpatialRelationsOntology_externally_connected_with</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A symmetric subrelation of Spatially Discrete From between two Independent Continuants (BFO) whose external boundaries are adjacent.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -395,9 +393,9 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has non-tangential proper spatial part</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#UFRGS:GeologicalSpatialRelationsOntology_has_proper_spatial_part</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A transitive subrelation of Location Of (BFO) between two Independent Continuants (BFO), x and y, in which the spatial region that y occupies is entirely inside the spatial region that x occupies. It is the inverse relation of Proper Spatial Part Of.</Literal>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#UFRGS:GeologicalSpatialRelationsOntology_has_non_tangential_proper_spatial_part</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A subrelation of Has Proper Spatial Part between two Independent Continuants (BFO) whose external boundaries are not adjacent. It is the inverse relation of Non-tangential Proper Spatial Part Of.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -405,9 +403,9 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has proper spatial part</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#UFRGS:GeologicalSpatialRelationsOntology_has_tangential_proper_spatial_part</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A subrelation of Has Proper Spatial Part between two Independent Continuants (BFO) whose external boundaries are adjacent. It is the inverse relation of Tangential Proper Spatial Part Of.</Literal>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#UFRGS:GeologicalSpatialRelationsOntology_has_proper_spatial_part</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A transitive subrelation of Location Of (BFO) between two Independent Continuants (BFO), x and y, in which the spatial region that y occupies is entirely inside the spatial region that x occupies. It is the inverse relation of Proper Spatial Part Of.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -415,14 +413,19 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has tangential proper spatial part</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#UFRGS:GeologicalSpatialRelationsOntology_in_front_of</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A spatial relation between two Independent Continuants (BFO), x and y, in which x has a location that makes it nearer than y in the longitudinal axis corresponding to the same frame of reference. It is the inverse relation of Behind.</Literal>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#UFRGS:GeologicalSpatialRelationsOntology_has_tangential_proper_spatial_part</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A subrelation of Has Proper Spatial Part between two Independent Continuants (BFO) whose external boundaries are adjacent. It is the inverse relation of Tangential Proper Spatial Part Of.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#UFRGS:GeologicalSpatialRelationsOntology_in_front_of</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">in front of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#UFRGS:GeologicalSpatialRelationsOntology_in_front_of</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A spatial relation between two Independent Continuants (BFO), x and y, in which x has a location that makes it nearer than y in the longitudinal axis corresponding to the same frame of reference. It is the inverse relation of Behind.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
@@ -435,19 +438,14 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">left of</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#UFRGS:GeologicalSpatialRelationsOntology_non_tangential_proper_spatial_part_of</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A subrelation of Proper Spatial Part Of between two Independent Continuants (BFO) whose external boundaries are not adjacent. It is the inverse relation of Has Non-tangential Proper Spatial Part.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#UFRGS:GeologicalSpatialRelationsOntology_non_tangential_proper_spatial_part_of</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">non-tangential proper spatial part of</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#UFRGS:GeologicalSpatialRelationsOntology_proper_spatial_part_of</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A transitive subrelation of Located In (BFO) between two Independent Continuants (BFO), x and y, in which the spatial region that x occupies is entirely inside the spatial region that y occupies. It is the inverse relation of Has Proper Spatial Part.</Literal>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#UFRGS:GeologicalSpatialRelationsOntology_non_tangential_proper_spatial_part_of</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A subrelation of Proper Spatial Part Of between two Independent Continuants (BFO) whose external boundaries are not adjacent. It is the inverse relation of Has Non-tangential Proper Spatial Part.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -455,9 +453,9 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">proper spatial part of</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#UFRGS:GeologicalSpatialRelationsOntology_right_of</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A spatial relation between two Independent Continuants (BFO), x and y, in which x has a location to the west of the location of y in the horizontal axis corresponding to the same frame of reference. It is the inverse relation of Left Of.</Literal>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#UFRGS:GeologicalSpatialRelationsOntology_proper_spatial_part_of</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A transitive subrelation of Located In (BFO) between two Independent Continuants (BFO), x and y, in which the spatial region that x occupies is entirely inside the spatial region that y occupies. It is the inverse relation of Has Proper Spatial Part.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -465,9 +463,9 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">right of</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#UFRGS:GeologicalSpatialRelationsOntology_spatially_disconnected_from</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A symmetric subrelation of Spatially Discrete From between two Independent Continuants (BFO) whose external boundaries are not adjacent.</Literal>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#UFRGS:GeologicalSpatialRelationsOntology_right_of</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A spatial relation between two Independent Continuants (BFO), x and y, in which x has a location to the west of the location of y in the horizontal axis corresponding to the same frame of reference. It is the inverse relation of Left Of.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -475,9 +473,9 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">spatially disconnected from</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#UFRGS:GeologicalSpatialRelationsOntology_spatially_discrete_from</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A symmetric spatial relation between two Independent Continuants (BFO) in which both do not share the same spatial region, either wholly or partially.</Literal>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#UFRGS:GeologicalSpatialRelationsOntology_spatially_disconnected_from</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A symmetric subrelation of Spatially Discrete From between two Independent Continuants (BFO) whose external boundaries are not adjacent.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -485,9 +483,9 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">spatially discrete from</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#UFRGS:GeologicalSpatialRelationsOntology_spatially_identical_to</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A symmetric spatial relation between two Independent Continuants (BFO) in which both occupy precisely the same spatial region.</Literal>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#UFRGS:GeologicalSpatialRelationsOntology_spatially_discrete_from</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A symmetric spatial relation between two Independent Continuants (BFO) in which both do not share the same spatial region, either wholly or partially.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -495,9 +493,9 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">spatially identical to</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#UFRGS:GeologicalSpatialRelationsOntology_spatially_partially_overlaps</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A symmetric spatial relation between two Independent Continuants (BFO) in which both share a part of the spatial regions they occupy.</Literal>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#UFRGS:GeologicalSpatialRelationsOntology_spatially_identical_to</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A symmetric spatial relation between two Independent Continuants (BFO) in which both occupy precisely the same spatial region.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -505,14 +503,19 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">spatially partially overlaps</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <IRI>#UFRGS:GeologicalSpatialRelationsOntology_tangential_proper_spatial_part_of</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A subrelation of Proper Spatial Part Of between two Independent Continuants (BFO) whose external boundaries are adjacent. It is the inverse relation of Has Tangential Proper Spatial Part.</Literal>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#UFRGS:GeologicalSpatialRelationsOntology_spatially_partially_overlaps</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A symmetric spatial relation between two Independent Continuants (BFO) in which both share a part of the spatial regions they occupy.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#UFRGS:GeologicalSpatialRelationsOntology_tangential_proper_spatial_part_of</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">tangential proper spatial part of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+        <IRI>#UFRGS:GeologicalSpatialRelationsOntology_tangential_proper_spatial_part_of</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A subrelation of Proper Spatial Part Of between two Independent Continuants (BFO) whose external boundaries are adjacent. It is the inverse relation of Has Tangential Proper Spatial Part.</Literal>
     </AnnotationAssertion>
 </Ontology>
 
