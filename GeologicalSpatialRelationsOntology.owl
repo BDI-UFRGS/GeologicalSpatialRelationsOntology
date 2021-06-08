@@ -13,7 +13,7 @@
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
-    <Import>https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology</Import>
+    <Import>http://purl.obolibrary.org/obo/bfo/2020/bfo.owl</Import>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
         <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Luan Fonseca Garcia</Literal>
@@ -75,21 +75,6 @@
         <ObjectProperty IRI="#UFRGS:GeologicalSpatialRelationsOntology_proper_spatial_part_of"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#UFRGS:GeologicalSpatialRelationsOntology_karoo_external_levee_1"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#UFRGS:GeologicalSpatialRelationsOntology_karoo_channel_complex_1"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#UFRGS:GeologicalSpatialRelationsOntology_karoo_channel_element_1"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#UFRGS:GeologicalSpatialRelationsOntology_karoo_channel_element_2"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#UFRGS:GeologicalSpatialRelationsOntology_karoo_channel_element_3"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#UFRGS:GeologicalSpatialRelationsOntology_above"/>
     </Declaration>
     <Declaration>
@@ -104,81 +89,12 @@
     <Declaration>
         <ObjectProperty IRI="#UFRGS:GeologicalSpatialRelationsOntology_non_tangential_proper_spatial_part_of"/>
     </Declaration>
-    <ClassAssertion>
-        <Class IRI="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_geological_object"/>
-        <NamedIndividual IRI="#UFRGS:GeologicalSpatialRelationsOntology_karoo_channel_complex_1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_geological_object"/>
-        <NamedIndividual IRI="#UFRGS:GeologicalSpatialRelationsOntology_karoo_channel_element_1"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_geological_object"/>
-        <NamedIndividual IRI="#UFRGS:GeologicalSpatialRelationsOntology_karoo_channel_element_2"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_geological_object"/>
-        <NamedIndividual IRI="#UFRGS:GeologicalSpatialRelationsOntology_karoo_channel_element_3"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology#UFRGS:GeoCoreOntology_geological_object"/>
-        <NamedIndividual IRI="#UFRGS:GeologicalSpatialRelationsOntology_karoo_external_levee_1"/>
-    </ClassAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#UFRGS:GeologicalSpatialRelationsOntology_has_tangential_proper_spatial_part"/>
-        <NamedIndividual IRI="#UFRGS:GeologicalSpatialRelationsOntology_karoo_channel_complex_1"/>
-        <NamedIndividual IRI="#UFRGS:GeologicalSpatialRelationsOntology_karoo_channel_element_1"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#UFRGS:GeologicalSpatialRelationsOntology_has_tangential_proper_spatial_part"/>
-        <NamedIndividual IRI="#UFRGS:GeologicalSpatialRelationsOntology_karoo_channel_complex_1"/>
-        <NamedIndividual IRI="#UFRGS:GeologicalSpatialRelationsOntology_karoo_channel_element_2"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#UFRGS:GeologicalSpatialRelationsOntology_has_tangential_proper_spatial_part"/>
-        <NamedIndividual IRI="#UFRGS:GeologicalSpatialRelationsOntology_karoo_channel_complex_1"/>
-        <NamedIndividual IRI="#UFRGS:GeologicalSpatialRelationsOntology_karoo_channel_element_3"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#UFRGS:GeologicalSpatialRelationsOntology_below"/>
-        <NamedIndividual IRI="#UFRGS:GeologicalSpatialRelationsOntology_karoo_channel_element_1"/>
-        <NamedIndividual IRI="#UFRGS:GeologicalSpatialRelationsOntology_karoo_channel_element_2"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#UFRGS:GeologicalSpatialRelationsOntology_below"/>
-        <NamedIndividual IRI="#UFRGS:GeologicalSpatialRelationsOntology_karoo_channel_element_1"/>
-        <NamedIndividual IRI="#UFRGS:GeologicalSpatialRelationsOntology_karoo_channel_element_3"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#UFRGS:GeologicalSpatialRelationsOntology_externally_connected_with"/>
-        <NamedIndividual IRI="#UFRGS:GeologicalSpatialRelationsOntology_karoo_channel_element_1"/>
-        <NamedIndividual IRI="#UFRGS:GeologicalSpatialRelationsOntology_karoo_channel_element_2"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#UFRGS:GeologicalSpatialRelationsOntology_spatially_disconnected_from"/>
-        <NamedIndividual IRI="#UFRGS:GeologicalSpatialRelationsOntology_karoo_channel_element_1"/>
-        <NamedIndividual IRI="#UFRGS:GeologicalSpatialRelationsOntology_karoo_channel_element_3"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#UFRGS:GeologicalSpatialRelationsOntology_below"/>
-        <NamedIndividual IRI="#UFRGS:GeologicalSpatialRelationsOntology_karoo_channel_element_2"/>
-        <NamedIndividual IRI="#UFRGS:GeologicalSpatialRelationsOntology_karoo_channel_element_3"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#UFRGS:GeologicalSpatialRelationsOntology_externally_connected_with"/>
-        <NamedIndividual IRI="#UFRGS:GeologicalSpatialRelationsOntology_karoo_channel_element_2"/>
-        <NamedIndividual IRI="#UFRGS:GeologicalSpatialRelationsOntology_karoo_channel_element_3"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#UFRGS:GeologicalSpatialRelationsOntology_externally_connected_with"/>
-        <NamedIndividual IRI="#UFRGS:GeologicalSpatialRelationsOntology_karoo_external_levee_1"/>
-        <NamedIndividual IRI="#UFRGS:GeologicalSpatialRelationsOntology_karoo_channel_complex_1"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty IRI="#UFRGS:GeologicalSpatialRelationsOntology_left_of"/>
-        <NamedIndividual IRI="#UFRGS:GeologicalSpatialRelationsOntology_karoo_external_levee_1"/>
-        <NamedIndividual IRI="#UFRGS:GeologicalSpatialRelationsOntology_karoo_channel_complex_1"/>
-    </ObjectPropertyAssertion>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
+    </Declaration>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#UFRGS:GeologicalSpatialRelationsOntology_above"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
@@ -201,7 +117,7 @@
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#UFRGS:GeologicalSpatialRelationsOntology_has_proper_spatial_part"/>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0001015"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000124"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#UFRGS:GeologicalSpatialRelationsOntology_has_tangential_proper_spatial_part"/>
@@ -221,7 +137,7 @@
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#UFRGS:GeologicalSpatialRelationsOntology_proper_spatial_part_of"/>
-        <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0001025"/>
+        <ObjectProperty IRI="http://purl.obolibrary.org/obo/BFO_0000171"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#UFRGS:GeologicalSpatialRelationsOntology_right_of"/>
@@ -507,31 +423,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#UFRGS:GeologicalSpatialRelationsOntology_in_front_of</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">in front of</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#UFRGS:GeologicalSpatialRelationsOntology_karoo_channel_complex_1</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">karoo channel complex 1</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#UFRGS:GeologicalSpatialRelationsOntology_karoo_channel_element_1</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">karoo channel element 1</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#UFRGS:GeologicalSpatialRelationsOntology_karoo_channel_element_2</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">karoo channel element 2</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#UFRGS:GeologicalSpatialRelationsOntology_karoo_channel_element_3</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">karoo channel element 3</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#UFRGS:GeologicalSpatialRelationsOntology_karoo_external_levee_1</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">karoo external levee 1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
