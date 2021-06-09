@@ -6,7 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="https://www.inf.ufrgs.br/bdi/ontologies/geologicalspatialrelationsontology"
-     versionIRI="https://www.inf.ufrgs.br/bdi/ontologies/geologicalspatialrelationsontology/2.0">
+     versionIRI="https://www.inf.ufrgs.br/bdi/ontologies/v2/geologicalspatialrelationsontology/">
     <Prefix name="" IRI="https://www.inf.ufrgs.br/bdi/ontologies/geologicalspatialrelationsontology"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
@@ -45,10 +45,19 @@
         <ObjectProperty IRI="#UFRGS:GeologicalSpatialRelationsOntology_in_front_of"/>
     </Declaration>
     <Declaration>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#UFRGS:GeologicalSpatialRelationsOntology_tangential_proper_spatial_part_of"/>
     </Declaration>
     <Declaration>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#UFRGS:GeologicalSpatialRelationsOntology_right_of"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#UFRGS:GeologicalSpatialRelationsOntology_has_proper_spatial_part"/>
@@ -88,15 +97,6 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#UFRGS:GeologicalSpatialRelationsOntology_non_tangential_proper_spatial_part_of"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000115"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#definition"/>
-    </Declaration>
-    <Declaration>
-        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/contributor"/>
     </Declaration>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#UFRGS:GeologicalSpatialRelationsOntology_above"/>
