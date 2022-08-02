@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-    <uri id="Imports Wizard Entry" name="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology" uri="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology"/>
-    <uri id="Imports Wizard Entry" name="https://www.inf.ufrgs.br/bdi/ontologies/geocoreontology/1.0" uri="GeoCoreOntology.owl"/>
-    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1649201471675" name="https://www.inf.ufrgs.br/bdi/ontologies/geologicalspatialrelationsontology" uri="GeologicalSpatialRelationsOntology.owl"/>
-    </group>
-</catalog>
