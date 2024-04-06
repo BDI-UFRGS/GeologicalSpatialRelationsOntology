@@ -1,0 +1,109 @@
+format-version: 1.2
+data-version: https://www.inf.ufrgs.br/bdi/ontologies/geospr/releases/2024-04-06/geospr-base.owl
+ontology: https://www.inf.ufrgs.br/bdi/ontologies/geospr/geospr-base.owl
+property_value: http://purl.org/dc/elements/1.1/contributor "Alcides Lopes" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Fernando Cicconeto" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Joel Luis Carbonera" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Luan Fonseca Garcia" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Lucas Valadares Vieira" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Mara Abel" xsd:string
+property_value: http://purl.org/dc/elements/1.1/contributor "Renata dos Santos Alvarenga" xsd:string
+property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
+property_value: http://purl.org/dc/terms/description "GeoSpatial Relations Ontology is an ontology that supports software applications in the determination of the physically possible spatial distribution of reservoir geological bodies.\n\nOriginally proposed in:\n\nCicconeto, F., Vieira, L. V., Abel, M., dos Santos Alvarenga, R., & Carbonera, J. L. (2020). A Spatial Relation Ontology for Deep-Water Depositional System Description in Geology. In ONTOBRAS (pp. 35-47).\n\n https://ceur-ws.org/Vol-2728/paper3.pdf." xsd:string
+property_value: http://purl.org/dc/terms/license "https://creativecommons.org/licenses/by-nc/4.0/" xsd:string
+property_value: http://purl.org/dc/terms/title "GeoSpatial Relations Ontology" xsd:string
+property_value: owl:versionInfo "2024-04-06" xsd:string
+
+[Typedef]
+id: GEOSPR:0000001
+name: above
+def: "A spatial relation between two Independent Continuants (BFO), x and y, in which x has a location greater than the location of y in the vertical axis corresponding to the same frame of reference. It is the inverse relation of Below." []
+
+[Typedef]
+id: GEOSPR:0000002
+name: spatially partially overlaps
+def: "A symmetric spatial relation between two Independent Continuants (BFO) in which both share a part of the spatial regions they occupy." []
+
+[Typedef]
+id: GEOSPR:0000003
+name: left of
+def: "A spatial relation between two Independent Continuants(BFO), x and y, in which x has a location to the east of the location of y in the horizontal axis corresponding to the same frame of reference. It is the inverse relation of Right Of." []
+
+[Typedef]
+id: GEOSPR:0000004
+name: below
+def: "A spatial relation between two Independent Continuants (BFO), x and y, in which x has a location lower than the location of y in the vertical axis corresponding to the same frame of reference. It is the inverse relation of Above." []
+
+[Typedef]
+id: GEOSPR:0000005
+name: spatially discrete from
+def: "A symmetric spatial relation between two Independent Continuants (BFO) in which both do not share the same spatial region, either wholly or partially." []
+
+[Typedef]
+id: GEOSPR:0000006
+name: externally connected with
+def: "A symmetric subrelation of Spatially Discrete From between two Independent Continuants (BFO) whose external boundaries are adjacent." []
+is_a: GEOSPR:0000005 ! spatially discrete from
+
+[Typedef]
+id: GEOSPR:0000007
+name: spatially disconnected from
+def: "A symmetric subrelation of Spatially Discrete From between two Independent Continuants (BFO) whose external boundaries are not adjacent." []
+is_a: GEOSPR:0000005 ! spatially discrete from
+
+[Typedef]
+id: GEOSPR:0000008
+name: spatially identical to
+def: "A symmetric spatial relation between two Independent Continuants (BFO) in which both occupy precisely the same spatial region." []
+
+[Typedef]
+id: GEOSPR:0000009
+name: right of
+def: "A spatial relation between two Independent Continuants (BFO), x and y, in which x has a location to the west of the location of y in the horizontal axis corresponding to the same frame of reference. It is the inverse relation of Left Of." []
+
+[Typedef]
+id: GEOSPR:0000010
+name: in front of
+def: "A spatial relation between two Independent Continuants (BFO), x and y, in which x has a location that makes it nearer than y in the longitudinal axis corresponding to the same frame of reference. It is the inverse relation of Behind." []
+
+[Typedef]
+id: GEOSPR:0000011
+name: behind
+def: "A spatial relation between two Independent Continuants(BFO), x and y, in which y has a location that makes it nearer than x in the longitudinal axis corresponding to the same frame of reference. It is the inverse relation of In Front Of." []
+
+[Typedef]
+id: GEOSPR:0000012
+name: has proper spatial part
+def: "A transitive subrelation of Location Of (BFO) between two Independent Continuants (BFO), x and y, in which the spatial region that y occupies is entirely inside the spatial region that x occupies. It is the inverse relation of Proper Spatial Part Of." []
+is_a: BFO:0000124
+
+[Typedef]
+id: GEOSPR:0000013
+name: has non-tangential proper spatial part
+def: "A subrelation of Has Proper Spatial Part between two Independent Continuants (BFO) whose external boundaries are not adjacent. It is the inverse relation of Non-tangential Proper Spatial Part Of." []
+is_a: GEOSPR:0000012 ! has proper spatial part
+
+[Typedef]
+id: GEOSPR:0000014
+name: has tangential proper spatial part
+def: "A subrelation of Has Proper Spatial Part between two Independent Continuants (BFO) whose external boundaries are adjacent. It is the inverse relation of Tangential Proper Spatial Part Of." []
+is_a: GEOSPR:0000012 ! has proper spatial part
+
+[Typedef]
+id: GEOSPR:0000015
+name: proper spatial part of
+def: "A transitive subrelation of Located In (BFO) between two Independent Continuants (BFO), x and y, in which the spatial region that x occupies is entirely inside the spatial region that y occupies. It is the inverse relation of Has Proper Spatial Part." []
+is_a: BFO:0000171
+
+[Typedef]
+id: GEOSPR:0000016
+name: non-tangential proper spatial part of
+def: "A subrelation of Proper Spatial Part Of between two Independent Continuants (BFO) whose external boundaries are not adjacent. It is the inverse relation of Has Non-tangential Proper Spatial Part." []
+is_a: GEOSPR:0000015 ! proper spatial part of
+
+[Typedef]
+id: GEOSPR:0000017
+name: tangential proper spatial part of
+def: "A subrelation of Proper Spatial Part Of between two Independent Continuants (BFO) whose external boundaries are adjacent. It is the inverse relation of Has Tangential Proper Spatial Part." []
+is_a: GEOSPR:0000015 ! proper spatial part of
+
