@@ -1,0 +1,205 @@
+Prefix(:=<https://www.inf.ufrgs.br/bdi/ontologies/geologicalspatialrelationsontology>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<https://www.inf.ufrgs.br/bdi/ontologies/geospar.owl>
+Import(<https://www.inf.ufrgs.br/bdi/ontologies/geospr/imports/bfo2020_import.owl>)
+Annotation(<http://purl.org/dc/elements/1.1/contributor> "Alcides Lopes")
+Annotation(<http://purl.org/dc/elements/1.1/contributor> "Fernando Cicconeto")
+Annotation(<http://purl.org/dc/elements/1.1/contributor> "Joel Luis Carbonera")
+Annotation(<http://purl.org/dc/elements/1.1/contributor> "Luan Fonseca Garcia")
+Annotation(<http://purl.org/dc/elements/1.1/contributor> "Lucas Valadares Vieira")
+Annotation(<http://purl.org/dc/elements/1.1/contributor> "Mara Abel")
+Annotation(<http://purl.org/dc/elements/1.1/contributor> "Renata dos Santos Alvarenga")
+Annotation(<http://purl.org/dc/terms/description> "GeoSpatial Relations Ontology is an ontology that supports software applications in the determination of the physically possible spatial distribution of reservoir geological bodies.
+
+Originally proposed in:
+
+Cicconeto, F., Vieira, L. V., Abel, M., dos Santos Alvarenga, R., & Carbonera, J. L. (2020). A Spatial Relation Ontology for Deep-Water Depositional System Description in Geology. In ONTOBRAS (pp. 35-47).
+
+ https://ceur-ws.org/Vol-2728/paper3.pdf.")
+Annotation(<http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by-nc/4.0/")
+Annotation(<http://purl.org/dc/terms/title> "GeoSpatial Relations Ontology")
+
+Declaration(Class(<http://purl.obolibrary.org/obo/BFO_0000004>))
+Declaration(ObjectProperty(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000001>))
+Declaration(ObjectProperty(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000002>))
+Declaration(ObjectProperty(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000003>))
+Declaration(ObjectProperty(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000004>))
+Declaration(ObjectProperty(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000005>))
+Declaration(ObjectProperty(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000006>))
+Declaration(ObjectProperty(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000007>))
+Declaration(ObjectProperty(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000008>))
+Declaration(ObjectProperty(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000009>))
+Declaration(ObjectProperty(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000010>))
+Declaration(ObjectProperty(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000011>))
+Declaration(ObjectProperty(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000012>))
+Declaration(ObjectProperty(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000013>))
+Declaration(ObjectProperty(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000014>))
+Declaration(ObjectProperty(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000015>))
+Declaration(ObjectProperty(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000016>))
+Declaration(ObjectProperty(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000017>))
+Declaration(AnnotationProperty(<http://purl.obolibrary.org/obo/IAO_0000115>))
+Declaration(AnnotationProperty(<http://purl.org/dc/elements/1.1/contributor>))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000001> (above)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000001> "A spatial relation between two Independent Continuants (BFO), x and y, in which x has a location greater than the location of y in the vertical axis corresponding to the same frame of reference. It is the inverse relation of Below."@en)
+AnnotationAssertion(rdfs:label <https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000001> "above"@en)
+SubObjectPropertyOf(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000001> owl:topObjectProperty)
+InverseObjectProperties(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000001> <https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000004>)
+ObjectPropertyDomain(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000001> <http://purl.obolibrary.org/obo/BFO_0000004>)
+ObjectPropertyRange(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000001> <http://purl.obolibrary.org/obo/BFO_0000004>)
+
+# Object Property: <https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000002> (spatially partially overlaps)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000002> "A symmetric spatial relation between two Independent Continuants (BFO) in which both share a part of the spatial regions they occupy."@en)
+AnnotationAssertion(rdfs:label <https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000002> "spatially partially overlaps"@en)
+SubObjectPropertyOf(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000002> owl:topObjectProperty)
+SymmetricObjectProperty(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000002>)
+ObjectPropertyDomain(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000002> <http://purl.obolibrary.org/obo/BFO_0000004>)
+ObjectPropertyRange(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000002> <http://purl.obolibrary.org/obo/BFO_0000004>)
+
+# Object Property: <https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000003> (left of)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000003> "A spatial relation between two Independent Continuants(BFO), x and y, in which x has a location to the east of the location of y in the horizontal axis corresponding to the same frame of reference. It is the inverse relation of Right Of."@en)
+AnnotationAssertion(rdfs:label <https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000003> "left of"@en)
+SubObjectPropertyOf(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000003> owl:topObjectProperty)
+InverseObjectProperties(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000003> <https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000009>)
+ObjectPropertyDomain(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000003> <http://purl.obolibrary.org/obo/BFO_0000004>)
+ObjectPropertyRange(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000003> <http://purl.obolibrary.org/obo/BFO_0000004>)
+
+# Object Property: <https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000004> (below)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000004> "A spatial relation between two Independent Continuants (BFO), x and y, in which x has a location lower than the location of y in the vertical axis corresponding to the same frame of reference. It is the inverse relation of Above."@en)
+AnnotationAssertion(rdfs:label <https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000004> "below"@en)
+SubObjectPropertyOf(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000004> owl:topObjectProperty)
+ObjectPropertyDomain(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000004> <http://purl.obolibrary.org/obo/BFO_0000004>)
+ObjectPropertyRange(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000004> <http://purl.obolibrary.org/obo/BFO_0000004>)
+
+# Object Property: <https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000005> (spatially discrete from)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000005> "A symmetric spatial relation between two Independent Continuants (BFO) in which both do not share the same spatial region, either wholly or partially."@en)
+AnnotationAssertion(rdfs:label <https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000005> "spatially discrete from"@en)
+SubObjectPropertyOf(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000005> owl:topObjectProperty)
+SymmetricObjectProperty(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000005>)
+ObjectPropertyDomain(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000005> <http://purl.obolibrary.org/obo/BFO_0000004>)
+ObjectPropertyRange(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000005> <http://purl.obolibrary.org/obo/BFO_0000004>)
+
+# Object Property: <https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000006> (externally connected with)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000006> "A symmetric subrelation of Spatially Discrete From between two Independent Continuants (BFO) whose external boundaries are adjacent."@en)
+AnnotationAssertion(rdfs:label <https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000006> "externally connected with"@en)
+SubObjectPropertyOf(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000006> <https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000005>)
+SymmetricObjectProperty(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000006>)
+ObjectPropertyDomain(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000006> <http://purl.obolibrary.org/obo/BFO_0000004>)
+ObjectPropertyRange(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000006> <http://purl.obolibrary.org/obo/BFO_0000004>)
+
+# Object Property: <https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000007> (spatially disconnected from)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000007> "A symmetric subrelation of Spatially Discrete From between two Independent Continuants (BFO) whose external boundaries are not adjacent."@en)
+AnnotationAssertion(rdfs:label <https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000007> "spatially disconnected from"@en)
+SubObjectPropertyOf(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000007> <https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000005>)
+SymmetricObjectProperty(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000007>)
+ObjectPropertyDomain(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000007> <http://purl.obolibrary.org/obo/BFO_0000004>)
+ObjectPropertyRange(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000007> <http://purl.obolibrary.org/obo/BFO_0000004>)
+
+# Object Property: <https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000008> (spatially identical to)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000008> "A symmetric spatial relation between two Independent Continuants (BFO) in which both occupy precisely the same spatial region."@en)
+AnnotationAssertion(rdfs:label <https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000008> "spatially identical to"@en)
+SubObjectPropertyOf(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000008> owl:topObjectProperty)
+SymmetricObjectProperty(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000008>)
+ObjectPropertyDomain(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000008> <http://purl.obolibrary.org/obo/BFO_0000004>)
+ObjectPropertyRange(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000008> <http://purl.obolibrary.org/obo/BFO_0000004>)
+
+# Object Property: <https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000009> (right of)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000009> "A spatial relation between two Independent Continuants (BFO), x and y, in which x has a location to the west of the location of y in the horizontal axis corresponding to the same frame of reference. It is the inverse relation of Left Of."@en)
+AnnotationAssertion(rdfs:label <https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000009> "right of"@en)
+SubObjectPropertyOf(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000009> owl:topObjectProperty)
+ObjectPropertyDomain(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000009> <http://purl.obolibrary.org/obo/BFO_0000004>)
+ObjectPropertyRange(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000009> <http://purl.obolibrary.org/obo/BFO_0000004>)
+
+# Object Property: <https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000010> (in front of)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000010> "A spatial relation between two Independent Continuants (BFO), x and y, in which x has a location that makes it nearer than y in the longitudinal axis corresponding to the same frame of reference. It is the inverse relation of Behind."@en)
+AnnotationAssertion(rdfs:label <https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000010> "in front of"@en)
+SubObjectPropertyOf(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000010> owl:topObjectProperty)
+InverseObjectProperties(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000010> <https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000011>)
+ObjectPropertyDomain(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000010> <http://purl.obolibrary.org/obo/BFO_0000004>)
+ObjectPropertyRange(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000010> <http://purl.obolibrary.org/obo/BFO_0000004>)
+
+# Object Property: <https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000011> (behind)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000011> "A spatial relation between two Independent Continuants(BFO), x and y, in which y has a location that makes it nearer than x in the longitudinal axis corresponding to the same frame of reference. It is the inverse relation of In Front Of."@en)
+AnnotationAssertion(rdfs:label <https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000011> "behind"@en)
+SubObjectPropertyOf(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000011> owl:topObjectProperty)
+ObjectPropertyDomain(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000011> <http://purl.obolibrary.org/obo/BFO_0000004>)
+ObjectPropertyRange(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000011> <http://purl.obolibrary.org/obo/BFO_0000004>)
+
+# Object Property: <https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000012> (has proper spatial part)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000012> "A transitive subrelation of Location Of (BFO) between two Independent Continuants (BFO), x and y, in which the spatial region that y occupies is entirely inside the spatial region that x occupies. It is the inverse relation of Proper Spatial Part Of."@en)
+AnnotationAssertion(rdfs:label <https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000012> "has proper spatial part"@en)
+SubObjectPropertyOf(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000012> <http://purl.obolibrary.org/obo/BFO_0000124>)
+InverseObjectProperties(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000012> <https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000015>)
+TransitiveObjectProperty(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000012>)
+ObjectPropertyDomain(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000012> <http://purl.obolibrary.org/obo/BFO_0000004>)
+ObjectPropertyRange(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000012> <http://purl.obolibrary.org/obo/BFO_0000004>)
+
+# Object Property: <https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000013> (has non-tangential proper spatial part)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000013> "A subrelation of Has Proper Spatial Part between two Independent Continuants (BFO) whose external boundaries are not adjacent. It is the inverse relation of Non-tangential Proper Spatial Part Of."@en)
+AnnotationAssertion(rdfs:label <https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000013> "has non-tangential proper spatial part"@en)
+SubObjectPropertyOf(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000013> <https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000012>)
+InverseObjectProperties(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000013> <https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000016>)
+ObjectPropertyDomain(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000013> <http://purl.obolibrary.org/obo/BFO_0000004>)
+ObjectPropertyRange(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000013> <http://purl.obolibrary.org/obo/BFO_0000004>)
+
+# Object Property: <https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000014> (has tangential proper spatial part)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000014> "A subrelation of Has Proper Spatial Part between two Independent Continuants (BFO) whose external boundaries are adjacent. It is the inverse relation of Tangential Proper Spatial Part Of."@en)
+AnnotationAssertion(rdfs:label <https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000014> "has tangential proper spatial part"@en)
+SubObjectPropertyOf(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000014> <https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000012>)
+InverseObjectProperties(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000014> <https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000017>)
+ObjectPropertyDomain(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000014> <http://purl.obolibrary.org/obo/BFO_0000004>)
+ObjectPropertyRange(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000014> <http://purl.obolibrary.org/obo/BFO_0000004>)
+
+# Object Property: <https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000015> (proper spatial part of)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000015> "A transitive subrelation of Located In (BFO) between two Independent Continuants (BFO), x and y, in which the spatial region that x occupies is entirely inside the spatial region that y occupies. It is the inverse relation of Has Proper Spatial Part."@en)
+AnnotationAssertion(rdfs:label <https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000015> "proper spatial part of"@en)
+SubObjectPropertyOf(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000015> <http://purl.obolibrary.org/obo/BFO_0000171>)
+TransitiveObjectProperty(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000015>)
+ObjectPropertyDomain(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000015> <http://purl.obolibrary.org/obo/BFO_0000004>)
+ObjectPropertyRange(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000015> <http://purl.obolibrary.org/obo/BFO_0000004>)
+
+# Object Property: <https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000016> (non-tangential proper spatial part of)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000016> "A subrelation of Proper Spatial Part Of between two Independent Continuants (BFO) whose external boundaries are not adjacent. It is the inverse relation of Has Non-tangential Proper Spatial Part."@en)
+AnnotationAssertion(rdfs:label <https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000016> "non-tangential proper spatial part of"@en)
+SubObjectPropertyOf(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000016> <https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000015>)
+ObjectPropertyDomain(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000016> <http://purl.obolibrary.org/obo/BFO_0000004>)
+ObjectPropertyRange(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000016> <http://purl.obolibrary.org/obo/BFO_0000004>)
+
+# Object Property: <https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000017> (tangential proper spatial part of)
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/IAO_0000115> <https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000017> "A subrelation of Proper Spatial Part Of between two Independent Continuants (BFO) whose external boundaries are adjacent. It is the inverse relation of Has Tangential Proper Spatial Part."@en)
+AnnotationAssertion(rdfs:label <https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000017> "tangential proper spatial part of"@en)
+SubObjectPropertyOf(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000017> <https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000015>)
+ObjectPropertyDomain(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000017> <http://purl.obolibrary.org/obo/BFO_0000004>)
+ObjectPropertyRange(<https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000017> <http://purl.obolibrary.org/obo/BFO_0000004>)
+
+
+
+
+)

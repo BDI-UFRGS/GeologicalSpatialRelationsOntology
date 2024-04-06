@@ -1,0 +1,470 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://www.inf.ufrgs.br/bdi/ontologies/geospr.owl#"
+     xml:base="https://www.inf.ufrgs.br/bdi/ontologies/geospr.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/geospr.owl">
+        <owl:versionIRI rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/geospr/releases/2024-04-06/geospr.owl"/>
+        <dc:contributor>Alcides Lopes</dc:contributor>
+        <dc:contributor>Fernando Cicconeto</dc:contributor>
+        <dc:contributor>Joel Luis Carbonera</dc:contributor>
+        <dc:contributor>Luan Fonseca Garcia</dc:contributor>
+        <dc:contributor>Lucas Valadares Vieira</dc:contributor>
+        <dc:contributor>Mara Abel</dc:contributor>
+        <dc:contributor>Renata dos Santos Alvarenga</dc:contributor>
+        <terms:description>GeoSpatial Relations Ontology is an ontology that supports software applications in the determination of the physically possible spatial distribution of reservoir geological bodies.
+
+Originally proposed in:
+
+Cicconeto, F., Vieira, L. V., Abel, M., dos Santos Alvarenga, R., &amp; Carbonera, J. L. (2020). A Spatial Relation Ontology for Deep-Water Depositional System Description in Geology. In ONTOBRAS (pp. 35-47).
+
+ https://ceur-ws.org/Vol-2728/paper3.pdf.</terms:description>
+        <terms:license>https://creativecommons.org/licenses/by-nc/4.0/</terms:license>
+        <terms:title>GeoSpatial Relations Ontology</terms:title>
+        <owl:versionInfo>2024-04-06</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/identifier -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/identifier"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/source -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#example -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#example"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#scopeNote -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#scopeNote"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000124 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000124">
+        <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000171"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000004"/>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000004"/>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
+        <dc:identifier>236-BFO</dc:identifier>
+        <rdfs:label xml:lang="en">location of</rdfs:label>
+        <skos:definition xml:lang="en">b location of c =Def c located in b</skos:definition>
+        <skos:scopeNote xml:lang="en">Users that require more sophisticated representations of time are encouraged to import a temporal extension of BFO-Core provided by the BFO development team. See documentation for guidance: &lt;Link&gt;</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000171 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000171">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000004"/>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000004"/>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
+        <dc:identifier>234-BFO</dc:identifier>
+        <rdfs:label xml:lang="en">located in</rdfs:label>
+        <skos:definition xml:lang="en">b located in c =Def b is an independent continuant &amp; c is an independent &amp; neither is a spatial region &amp; there is some time t such that the spatial region which b occupies at t is continuant part of the spatial region which c occupies at t</skos:definition>
+        <skos:scopeNote xml:lang="en">Users that require more sophisticated representations of time are encouraged to import a temporal extension of BFO-Core provided by the BFO development team. See documentation for guidance: &lt;Link&gt;</skos:scopeNote>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000001 -->
+
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000001">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000004"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <obo:IAO_0000115 xml:lang="en">A spatial relation between two Independent Continuants (BFO), x and y, in which x has a location greater than the location of y in the vertical axis corresponding to the same frame of reference. It is the inverse relation of Below.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">above</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000002 -->
+
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000002">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <obo:IAO_0000115 xml:lang="en">A symmetric spatial relation between two Independent Continuants (BFO) in which both share a part of the spatial regions they occupy.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">spatially partially overlaps</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000003 -->
+
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000003">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000009"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <obo:IAO_0000115 xml:lang="en">A spatial relation between two Independent Continuants(BFO), x and y, in which x has a location to the east of the location of y in the horizontal axis corresponding to the same frame of reference. It is the inverse relation of Right Of.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">left of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000004 -->
+
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000004">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <obo:IAO_0000115 xml:lang="en">A spatial relation between two Independent Continuants (BFO), x and y, in which x has a location lower than the location of y in the vertical axis corresponding to the same frame of reference. It is the inverse relation of Above.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">below</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000005 -->
+
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000005">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <obo:IAO_0000115 xml:lang="en">A symmetric spatial relation between two Independent Continuants (BFO) in which both do not share the same spatial region, either wholly or partially.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">spatially discrete from</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000006 -->
+
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000006">
+        <rdfs:subPropertyOf rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000005"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <obo:IAO_0000115 xml:lang="en">A symmetric subrelation of Spatially Discrete From between two Independent Continuants (BFO) whose external boundaries are adjacent.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">externally connected with</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000007 -->
+
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000007">
+        <rdfs:subPropertyOf rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000005"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <obo:IAO_0000115 xml:lang="en">A symmetric subrelation of Spatially Discrete From between two Independent Continuants (BFO) whose external boundaries are not adjacent.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">spatially disconnected from</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000008 -->
+
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000008">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <obo:IAO_0000115 xml:lang="en">A symmetric spatial relation between two Independent Continuants (BFO) in which both occupy precisely the same spatial region.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">spatially identical to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000009 -->
+
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000009">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <obo:IAO_0000115 xml:lang="en">A spatial relation between two Independent Continuants (BFO), x and y, in which x has a location to the west of the location of y in the horizontal axis corresponding to the same frame of reference. It is the inverse relation of Left Of.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">right of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000010 -->
+
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000010">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000011"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <obo:IAO_0000115 xml:lang="en">A spatial relation between two Independent Continuants (BFO), x and y, in which x has a location that makes it nearer than y in the longitudinal axis corresponding to the same frame of reference. It is the inverse relation of Behind.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">in front of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000011 -->
+
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000011">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <obo:IAO_0000115 xml:lang="en">A spatial relation between two Independent Continuants(BFO), x and y, in which y has a location that makes it nearer than x in the longitudinal axis corresponding to the same frame of reference. It is the inverse relation of In Front Of.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">behind</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000012 -->
+
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000012">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000124"/>
+        <owl:inverseOf rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000015"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <obo:IAO_0000115 xml:lang="en">A transitive subrelation of Location Of (BFO) between two Independent Continuants (BFO), x and y, in which the spatial region that y occupies is entirely inside the spatial region that x occupies. It is the inverse relation of Proper Spatial Part Of.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">has proper spatial part</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000013 -->
+
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000013">
+        <rdfs:subPropertyOf rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000012"/>
+        <owl:inverseOf rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000016"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <obo:IAO_0000115 xml:lang="en">A subrelation of Has Proper Spatial Part between two Independent Continuants (BFO) whose external boundaries are not adjacent. It is the inverse relation of Non-tangential Proper Spatial Part Of.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">has non-tangential proper spatial part</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000014 -->
+
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000014">
+        <rdfs:subPropertyOf rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000012"/>
+        <owl:inverseOf rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000017"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <obo:IAO_0000115 xml:lang="en">A subrelation of Has Proper Spatial Part between two Independent Continuants (BFO) whose external boundaries are adjacent. It is the inverse relation of Tangential Proper Spatial Part Of.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">has tangential proper spatial part</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000015 -->
+
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000015">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000171"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <obo:IAO_0000115 xml:lang="en">A transitive subrelation of Located In (BFO) between two Independent Continuants (BFO), x and y, in which the spatial region that x occupies is entirely inside the spatial region that y occupies. It is the inverse relation of Has Proper Spatial Part.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">proper spatial part of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000016 -->
+
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000016">
+        <rdfs:subPropertyOf rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000015"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <obo:IAO_0000115 xml:lang="en">A subrelation of Proper Spatial Part Of between two Independent Continuants (BFO) whose external boundaries are not adjacent. It is the inverse relation of Has Non-tangential Proper Spatial Part.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">non-tangential proper spatial part of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000017 -->
+
+    <owl:ObjectProperty rdf:about="https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000017">
+        <rdfs:subPropertyOf rdf:resource="https://www.inf.ufrgs.br/bdi/ontologies/GEOSPR_0000015"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <obo:IAO_0000115 xml:lang="en">A subrelation of Proper Spatial Part Of between two Independent Continuants (BFO) whose external boundaries are adjacent. It is the inverse relation of Has Tangential Proper Spatial Part.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">tangential proper spatial part of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000001">
+        <dc:identifier>001-BFO</dc:identifier>
+        <rdfs:label xml:lang="en">entity</rdfs:label>
+        <skos:definition xml:lang="en">(Elucidation) An entity is anything that exists or has existed or will exist</skos:definition>
+        <skos:example xml:lang="en">Julius Caesar; the Second World War; your body mass index; Verdi&apos;s Requiem</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000002">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000001"/>
+        <dc:identifier>008-BFO</dc:identifier>
+        <rdfs:label xml:lang="en">continuant</rdfs:label>
+        <skos:definition xml:lang="en">(Elucidation) A continuant is an entity that persists, endures, or continues to exist through time while maintaining its identity</skos:definition>
+        <skos:example xml:lang="en">A human being; a tennis ball; a cave; a region of space; someone&apos;s temperature</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000004 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000004">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000002"/>
+        <dc:identifier>017-BFO</dc:identifier>
+        <rdfs:label xml:lang="en">independent continuant</rdfs:label>
+        <skos:definition xml:lang="en">b is an independent continuant =Def b is a continuant &amp; there is no c such that b specifically depends on c or b generically depends on c</skos:definition>
+        <skos:example xml:lang="en">An atom; a molecule; an organism; a heart; a chair; the bottom right portion of a human torso; a leg; the interior of your mouth; a spatial region; an orchestra</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000006 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000006">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000141"/>
+        <dc:identifier>035-BFO</dc:identifier>
+        <rdfs:label xml:lang="en">spatial region</rdfs:label>
+        <skos:definition xml:lang="en">(Elucidation) A spatial region is a continuant entity that is a continuant part of the spatial projection of a portion of spacetime at a given time</skos:definition>
+        <skos:example xml:lang="en">As for zero-dimensional spatial region, one-dimensional spatial region, two-dimensional spatial region, three-dimensional spatial region</skos:example>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000141 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000141">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
+        <dc:identifier>028-BFO</dc:identifier>
+        <rdfs:label xml:lang="en">immaterial entity</rdfs:label>
+        <skos:definition xml:lang="en">b is an immaterial entity =Def b is an independent continuant which is such that there is no time t when it has a material entity as continuant part</skos:definition>
+        <skos:example xml:lang="en">As for fiat point, fiat line, fiat surface, site</skos:example>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26) https://github.com/owlcs/owlapi -->
+
