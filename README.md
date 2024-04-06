@@ -10,8 +10,6 @@ Cicconeto, F., Vieira, L. V., Abel, M., dos Santos Alvarenga, R., & Carbonera, J
 
  https://ceur-ws.org/Vol-2728/paper3.pdf.
 
-More information can be found at http://obofoundry.org/ontology/geospr
-
 ## Versions
 
 ### Stable release versions
